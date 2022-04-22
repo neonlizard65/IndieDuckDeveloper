@@ -39,7 +39,7 @@ namespace IndieDuckDeveloperUnitTests
                    //Arrange
                    Developer dev = new Developer(0, "WagnerGames", "", "12345551231245", "", "", "", "Great bio btw", 26);
                    //Act
-                   var result = await Developer.CreateAsync<Developer>(dev);
+                   var result = await Developer.CreateAsync(dev);
                    //Assert
                    Assert.IsTrue(result);
                }

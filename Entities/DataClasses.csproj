@@ -80,9 +80,20 @@
     <Compile Include="Models\Build.cs" />
     <Compile Include="Models\Bundle.cs" />
     <Compile Include="Models\Country.cs" />
+    <Compile Include="Models\Coupon.cs" />
     <Compile Include="Models\Developer.cs" />
     <Compile Include="Models\DeveloperUser.cs" />
+    <Compile Include="Models\Franchise.cs" />
+    <Compile Include="Models\Level.cs" />
+    <Compile Include="Models\Platform.cs" />
+    <Compile Include="Models\PrivacyType.cs" />
+    <Compile Include="Models\ProfanityFilter.cs" />
+    <Compile Include="Models\Publisher.cs" />
+    <Compile Include="Models\ReportReason.cs" />
+    <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\Status.cs" />
     <Compile Include="Models\Tag.cs" />
+    <Compile Include="Models\TicketReason.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
   </ItemGroup>

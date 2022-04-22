@@ -80,6 +80,10 @@
     <Compile Include="DeveloperTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DeveloperUserTests.cs" />
+    <Compile Include="PublisherTests.cs" />
+    <Compile Include="AssistantTests.cs" />
+    <Compile Include="OtherTests.cs" />
+    <Compile Include="FranchiseTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

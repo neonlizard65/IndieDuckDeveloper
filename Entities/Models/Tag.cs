@@ -19,7 +19,7 @@ namespace DataClasses.Models
         /// ID тэга
         /// </summary>
         [JsonPropertyName("TagID")]
-        public string ID { get; set; }
+        public uint ID { get; set; }
 
         /// <summary>
         /// Название тэга
@@ -31,7 +31,7 @@ namespace DataClasses.Models
         /// </summary>
         /// <param name="id">ID тэга</param>
         /// <param name="name">Название тэга</param>
-        public Tag(string id, string name)
+        public Tag(uint id, string name)
         {
             ID = id;
             Name = name;
@@ -41,12 +41,16 @@ namespace DataClasses.Models
         /// Асинхронное получение списка тэгов
         /// </summary>
         /// <returns>Возвращается Task, которая имеет тип списка тэгов</returns>
-        public static async Task<List<Country>> GetCountriesAsync()
+        public static async Task<List<Tag>> GetTagsAsync()
         {
             HttpClient client = new HttpClient();
+            JsonSerializerOptions options = new JsonSerializerOptions()
+            {
+                NumberHandling = JsonNumberHandling.AllowReadingFromString
+            };
             Task<string> jsonData = client.GetStringAsync("http://192.168.1.75/api/methods/tag/getTags.php");
             var content = await jsonData;
-            var tagList = await JsonSerializer.DeserializeAsync<List<Country>>(new MemoryStream(Encoding.UTF8.GetBytes(content)));
+            var tagList = await JsonSerializer.DeserializeAsync<List<Tag>>(new MemoryStream(Encoding.UTF8.GetBytes(content)), options);
             return tagList;
         }
 
