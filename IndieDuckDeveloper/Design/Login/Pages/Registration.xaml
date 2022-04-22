@@ -1,0 +1,46 @@
+﻿<Page x:Class="IndieDuckDeveloper.Login.Pages.Registration"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:IndieDuckDeveloper.Login.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Registration">
+
+    <Grid>
+        <StackPanel HorizontalAlignment="Left">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBlock Text="Name"></TextBlock>
+                <TextBox/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBlock Text="Bio"></TextBlock>
+                <TextBox/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Image Name="Youtube"></Image>
+                <TextBox/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Image Name="Twitch"></Image>
+                <TextBox/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <Image Name="Twitter"></Image>
+                <TextBox/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBlock Text="Bank card"></TextBlock>
+                <TextBox/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+                <TextBlock Text="Logo"></TextBlock>
+                <Button Content="Upload"/>
+                <TextBlock Name="FileName"/>
+            </StackPanel>
+            <ComboBox Name="CountryBox"/>
+            <Button Content="Next>"/>
+        </StackPanel>
+    </Grid>
+</Page>

@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace IndieDuckDeveloper
+namespace IndieDuckDeveloper.Login.Pages
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for Registration2.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class Registration2 : Page
     {
-        public MainWindow()
+        public Registration2()
         {
             InitializeComponent();
         }
