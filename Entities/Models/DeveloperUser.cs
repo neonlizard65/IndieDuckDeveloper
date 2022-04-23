@@ -115,6 +115,7 @@ namespace DataClasses.Models
         /// <summary>
         /// Асинхронное получение пользователя разработчика по логину пользователя
         /// </summary>
+        /// <param name="Name">Логин пользователя разработчика</param>
         /// <returns>Task с типом пользователя разработчика</returns>
         public static async Task<DeveloperUser> GetDeveloperUserByNameAsync(string Name)
         {
@@ -133,6 +134,7 @@ namespace DataClasses.Models
         /// <summary>
         /// Асинхронное получение пользователя разработчика по логину пользователя
         /// </summary>
+        /// <param name="DeveloperId">ID разработчика</param>
         /// <returns>Task с типом пользователя разработчика</returns>
         public static async Task<List<DeveloperUser>> GetDeveloperUsersByDeveloper (uint DeveloperId)
         {
@@ -150,6 +152,7 @@ namespace DataClasses.Models
         /// <summary>
         /// Асинхронное добавление пользователя разработчика
         /// </summary>
+        /// <param name="dev">Пользователь разработчика</param>
         /// <returns>Task с булевым типом, отражающий статус операции (true - успешно, false - ошибка)</returns>
         public static async Task<bool> CreateAsync(DeveloperUser dev)
         {
@@ -162,6 +165,7 @@ namespace DataClasses.Models
         /// <summary>
         /// Асинхронное пользователя разработчика
         /// </summary>
+        /// <param name="dev">Пользователь разработчика</param>
         /// <returns>Task с булевым типом, отражающий статус операции (true - успешно, false - ошибка)</returns>
         public static async Task<bool> DeleteAsync(DeveloperUser dev)
         {
@@ -174,6 +178,7 @@ namespace DataClasses.Models
         /// <summary>
         /// Асинхронное редактирование  пользователя разработчика
         /// </summary>
+        /// <param name="dev">Пользователь разработчика</param>
         /// <returns>Task с булевым типом, отражающий статус операции (true - успешно, false - ошибка)</returns>
         public static async Task<bool> EditAsync(DeveloperUser dev)
         {

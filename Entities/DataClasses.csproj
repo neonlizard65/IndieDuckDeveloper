@@ -75,6 +75,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Commands\CustomCommands.cs" />
+    <Compile Include="ConverterJson\CustomDateTimeConverter.cs" />
     <Compile Include="Models\Achievement.cs" />
     <Compile Include="Models\Assistant.cs" />
     <Compile Include="Models\Build.cs" />
@@ -84,6 +85,7 @@
     <Compile Include="Models\Developer.cs" />
     <Compile Include="Models\DeveloperUser.cs" />
     <Compile Include="Models\Franchise.cs" />
+    <Compile Include="Models\Group.cs" />
     <Compile Include="Models\Level.cs" />
     <Compile Include="Models\Platform.cs" />
     <Compile Include="Models\PrivacyType.cs" />
@@ -94,6 +96,7 @@
     <Compile Include="Models\Status.cs" />
     <Compile Include="Models\Tag.cs" />
     <Compile Include="Models\TicketReason.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\LoginViewModel.cs" />
   </ItemGroup>

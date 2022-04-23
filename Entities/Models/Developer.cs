@@ -112,6 +112,7 @@ namespace DataClasses.Models
         /// <summary>
         /// Асинхронное получение разработчика по ID
         /// </summary>
+        /// <param name="id">ID разработчика</param>
         /// <returns>Task с типом разработчика</returns>
         public static async Task<Developer> GetDeveloperByIDAsync(uint id)
         {
@@ -129,6 +130,7 @@ namespace DataClasses.Models
         /// <summary>
         /// Асинхронное получение списка разработчиков по стране
         /// </summary>
+        /// <param name="CountryId">ID страны</param>
         /// <returns>Task с типом списка разработчиков</returns>
         public static async Task<List<Developer>> GetDevelopersByCountryAsync(uint CountryId)
         {
@@ -146,6 +148,7 @@ namespace DataClasses.Models
         /// <summary>
         /// Асинхронное добавление разработчика
         /// </summary>
+        /// <param name="dev">Создаваемый разработчик</param>
         /// <returns>Task с булевым типом, отражающий статус операции (true - успешно, false - ошибка)</returns>
         public static async Task<bool> CreateAsync(Developer dev)
         {
@@ -158,6 +161,7 @@ namespace DataClasses.Models
         /// <summary>
         /// Асинхронное удаление разработчика
         /// </summary>
+        /// <param name="dev">Удаляемый разработчик</param>
         /// <returns>Task с булевым типом, отражающий статус операции (true - успешно, false - ошибка)</returns>
         public static async Task<bool> DeleteAsync(Developer dev)
         {
@@ -170,6 +174,7 @@ namespace DataClasses.Models
         /// <summary>
         /// Асинхронное редактирование разработчика
         /// </summary>
+        /// <param name="dev">Редактируемый разработчик</param>
         /// <returns>Task с булевым типом, отражающий статус операции (true - успешно, false - ошибка)</returns>
         public static async Task<bool> EditAsync(Developer dev)
         {

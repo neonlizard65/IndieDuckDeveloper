@@ -62,6 +62,7 @@ namespace DataClasses.Models
         /// <summary>
         /// Асинхронное получение издателя по ID
         /// </summary>
+        /// <param name="id">ID издателя</param>
         /// <returns>Task с типом издателя</returns>
         public static async Task<Publisher> GetPublisherByIDAsync(uint id)
         {
@@ -79,6 +80,7 @@ namespace DataClasses.Models
         /// <summary>
         /// Асинхронное добавление издателя
         /// </summary>
+        /// <param name="pub">Издатель</param>
         /// <returns>Task с булевым типом, отражающий статус операции (true - успешно, false - ошибка)</returns>
         public static async Task<bool> CreateAsync(Publisher pub)
         {
@@ -91,6 +93,7 @@ namespace DataClasses.Models
         /// <summary>
         /// Асинхронное удаление издателя
         /// </summary>
+        /// <param name="pub">Издатель</param>
         /// <returns>Task с булевым типом, отражающий статус операции (true - успешно, false - ошибка)</returns>
         public static async Task<bool> DeleteAsync(Publisher pub)
         {
@@ -103,6 +106,7 @@ namespace DataClasses.Models
         /// <summary>
         /// Асинхронное редактирование издателя
         /// </summary>
+        /// <param name="pub">Издатель</param>
         /// <returns>Task с булевым типом, отражающий статус операции (true - успешно, false - ошибка)</returns>
         public static async Task<bool> EditAsync(Publisher pub)
         {

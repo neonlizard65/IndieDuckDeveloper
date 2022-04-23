@@ -72,6 +72,7 @@ namespace DataClasses.Models
         /// <summary>
         /// Асинхронное получение тех.пом. по ID
         /// </summary>
+        /// <param name="name">Логин тех.пом.</param>
         /// <returns>Task с типом тех.пом.</returns>
         public static async Task<Assistant> GetAssistantByUserNameAsync(string name)
         {
@@ -90,6 +91,7 @@ namespace DataClasses.Models
         /// <summary>
         /// Асинхронное добавление тех.пом.
         /// </summary>
+        /// <param name="ast">Тех.пом.</param>
         /// <returns>Task с булевым типом, отражающий статус операции (true - успешно, false - ошибка)</returns>
         public static async Task<bool> CreateAsync(Assistant ast)
         {
@@ -102,6 +104,7 @@ namespace DataClasses.Models
         /// <summary>
         /// Асинхронное удаление тех.спец.
         /// </summary>
+        /// <param name="ast">Тех.пом.</param>
         /// <returns>Task с булевым типом, отражающий статус операции (true - успешно, false - ошибка)</returns>
         public static async Task<bool> DeleteAsync(Assistant ast)
         {
@@ -114,6 +117,7 @@ namespace DataClasses.Models
         /// <summary>
         /// Асинхронное редактирование тех.пом.
         /// </summary>
+        /// <param name="ast">Тех.пом.</param>
         /// <returns>Task с булевым типом, отражающий статус операции (true - успешно, false - ошибка)</returns>
         public static async Task<bool> EditAsync(Assistant ast)
         {

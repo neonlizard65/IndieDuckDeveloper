@@ -84,6 +84,8 @@
     <Compile Include="AssistantTests.cs" />
     <Compile Include="OtherTests.cs" />
     <Compile Include="FranchiseTests.cs" />
+    <Compile Include="GroupTests.cs" />
+    <Compile Include="UserTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

@@ -30,6 +30,12 @@ namespace DataClasses.Models
         /// </summary>
         public string FranchiseImage { get; set; }
 
+        /// <summary>
+        /// Конструктор франшиз
+        /// </summary>
+        /// <param name="franchiseID">ID франшизы</param>
+        /// <param name="franchiseName">Название франшизы</param>
+        /// <param name="franchiseImage">Картинка франшизы</param>
         public Franchise(uint franchiseID, string franchiseName, string franchiseImage)
         {
             FranchiseID = franchiseID;
@@ -57,6 +63,7 @@ namespace DataClasses.Models
         /// <summary>
         /// Асинхронное добавление франшиз
         /// </summary>
+        /// <param name="franchise">Создаваемая франшиза</param>
         /// <returns>Task с булевым типом, отражающий статус операции (true - успешно, false - ошибка)</returns>
         public static async Task<bool> CreateAsync(Franchise franchise)
         {
@@ -69,6 +76,7 @@ namespace DataClasses.Models
         /// <summary>
         /// Асинхронное удаление франшиз
         /// </summary>
+        /// <param name="franchise">Удаляемая франшиза</param>
         /// <returns>Task с булевым типом, отражающий статус операции (true - успешно, false - ошибка)</returns>
         public static async Task<bool> DeleteAsync(Franchise franchise)
         {
@@ -81,6 +89,7 @@ namespace DataClasses.Models
         /// <summary>
         /// Асинхронное редактирование франшиз
         /// </summary>
+        /// <param name="franchise">Редактируемая франшиза</param>
         /// <returns>Task с булевым типом, отражающий статус операции (true - успешно, false - ошибка)</returns>
         public static async Task<bool> EditAsync(Franchise franchise)
         {
